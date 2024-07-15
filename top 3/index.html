@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 3 Fotos da Minha Namorada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #ff69b4;
+        }
+        .photo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .photo {
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid #ff69b4;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .photo img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .caption {
+            margin-top: 10px;
+            font-style: italic;
+            color: #555;
+        }
+        .reaction-container {
+            margin-top: 20px;
+        }
+        .reaction-container img {
+            max-width: 300px;
+            display: none;
+            margin-top: 20px;
+        }
+        .photo-row {
+            display: flex;
+            justify-content: center;
+        }
+        .photo-row .photo {
+            flex: 1;
+            max-width: 45%;
+        }
+        .photo-container .photo img {
+            width: 50%; /* Reduz o tamanho pela metade */
+        }
+        .photo-row .photo img {
+            width: 100%; /* Ocupa toda a largura do contêiner flex */
+        }
+    </style>
+    <script>
+        const gifs = [
+            "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjc5N2g2ZGtwaWwzaXk1cnlsZXh4NTVtN2tua3JvZDVna2tmeGFpMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/H2u46cKU3VaXht6Iv9/giphy.gif",
+            "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHRvNGlxcnRyOWhuZXE3MWI5eXIwbjFibzVsZml6YndtcTZ1NjVseSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MDJ9IbxxvDUQM/giphy.gif",
+            "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjg4a3p6c2licTA2c3l2ZjRzdGdoaDM1c3czaGRrY2llZW14NmdtZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WUrKpJUmNAsxTzHhao/giphy.gif",
+            "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3cxMzE2azk1cjN1YTFxbTRqaDc3amVxN2ZkM2RrNGJuZmwxeXZtbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Laa7FjQL21kgo/giphy.gif",
+            "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzd0cHczZWl1eXpsdTY2YXk0ZXB3dms4Nzk5a25sZzQxeGltZDgyMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1wmOyZYoGzz003R03Y/giphy.gif",
+            "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnN2b2dpazVudmY2djQzZnJzcHd3dzhhMHlnMWg2eW90Y25xMWx2NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/d5wH9pqEGH4ipNrX7E/giphy.gif",
+            "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWF2cWcyNWhlOTVkbXNma3BkMWR3aXBqaDZhcDEyN3QzMHJjbDgwMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MpeWJ9JyTyOm4/giphy.gif"
+
+
+
+            
+  
+        ];
+
+        function showReaction() {
+            const gif = document.getElementById("reactionGif");
+            const randomIndex = Math.floor(Math.random() * gifs.length);
+            gif.src = gifs[randomIndex];
+            gif.style.display = "block";
+            setTimeout(function() {
+                gif.style.display = "none";
+            }, 3600000); // 1 hora = 3600000 milissegundos
+        }
+    </script>
+</head>
+<body>
+    <h1>Top 3 Fotos da Minha Namorada</h1>
+    <div class="photo-container">
+        <div class="photo">
+            <img src="TOP1.jpg" alt="Foto 1">
+            <div class="caption">"Essa pois o seu sorrisinho, e essa covinha que vai se formando, acabam comigo... E ESSA FOTO DEVERIA SER TOMBADA PATRIMONIO, POIS ELA PODERIA MUITO BEM SE TORNAR UM QUEBRA CABEÇA "</div>
+        </div>
+        <div class="photo-row">
+            <div class="photo">
+                <img src="TOP2.jpg" alt="Foto 2">
+                <div class="caption">"Pois selfie segurando o celular com os dois braços, ja virou marca registrada sua, e o sorrisinho de lado, acaba comigo, e o seu cabelo ta lindo demais nessa"</div>
+            </div>
+            <div class="photo">
+                <img src="TOP3.jpg" alt="Foto 3">
+                <div class="caption">"Além de termos duas paisagens sobrepostas, uma está de perfil né, então ela pode tudo!! Te amo"</div>
+            </div>
+        </div>
+    </div>
+    <div class="reaction-container">
+        <button onclick="showReaction()">Minha Reação</button>
+        <img id="reactionGif" src="" alt="Reação Apaixonada">
+    </div>
+</body>
+</html>
+
+            
+          
